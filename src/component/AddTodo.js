@@ -37,7 +37,14 @@ class AddTodo extends Component {
         // an OnClick event.
         // 3. The value of the text field also should reflect the local state of this component.
         <div>
-          
+          <form onSubmit={this.handleSubmit}>
+          <input
+            type="text"
+            value={this.state.content}
+            onChange={this.handleChange}
+          />
+          <button type="submit">Enter Todo</button>
+        </form>
         </div>
       );
     }
