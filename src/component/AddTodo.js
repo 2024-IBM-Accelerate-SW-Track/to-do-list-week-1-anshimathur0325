@@ -45,7 +45,7 @@ class AddTodo extends Component {
         data-testid="new-item-textfield"
         />
         <Button
-        style={{ marginLeft: "10px" }}
+        style={{ marginLeft: "10px", height: "56px" }}
         onClick={this.handleSubmit}
         variant="contained"
         color="primary"
