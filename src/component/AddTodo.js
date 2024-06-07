@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Button, TextField } from "@mui/material";
 class AddTodo extends Component {
     // A local react state of the this component with a content property set to nothing.
     constructor() {
@@ -37,8 +37,24 @@ class AddTodo extends Component {
         // an OnClick event.
         // 3. The value of the text field also should reflect the local state of this component.
         <div>
-          
+        <TextField
+        label="Add New Item"
+        variant="outlined"
+        onChange={this.handleChange}
+        value={this.state.content}
+        data-testid="new-item-textfield"
+        />
+        <Button
+        style={{ marginLeft: "10px", height: "56px" }}
+        onClick={this.handleSubmit}
+        variant="contained"
+        color="primary"
+        data-testid="new-item-button"
+        >
+        Add
+        </Button>
         </div>
+        
       );
     }
   }
