@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import AddTodo from "../component/AddTodo";
 import Todos from "../component/todos";
+import RandomThing from '../component/RandomThing';
+
 import "./Home.css";
 class Home extends Component {
   // A default state of this component with an empty list of todos.
@@ -36,6 +38,7 @@ class Home extends Component {
         <AddTodo addTodo={this.addTodo} />
         <Todos todos={this.state.todos} />
         </div>
+        <RandomThing/>
       </div>
     );
   }
