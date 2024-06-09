@@ -26,7 +26,7 @@ const Todos = ({ todos }) => {
         );
       })
     ) : (
-      <p>{/*Enter your message here if todo list is empty*/}List is empty. Add something pls.</p>
+      <p style={{color: "#d64045"}}>{/*Enter your message here if todo list is empty*/}List is empty. Add something pls.</p>
     );
     // Lastly, return the todoList constant that we created above to show all of the items on the screen.
     return (

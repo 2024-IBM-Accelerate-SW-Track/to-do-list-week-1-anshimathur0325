@@ -9,6 +9,7 @@ import {
 } from "react-router-dom"
 import About from "../../pages/About";
 import Home from "../../pages/Home";
+import image from './favicon (1)-9.png';
 
 export default class NavbarComp extends Component {
     render() {
@@ -19,12 +20,13 @@ export default class NavbarComp extends Component {
             <style type="text/css">
                         {`
                         .x {
-                            background-color: lightblue !important;
+                            background-color: #1D3354 !important;
                         }
                         `}
                     </style>
-            <Navbar className="x" bg="dark" variant={"light"} expand="md">
+            <Navbar className="x" bg="dark" variant={"dark"} expand="md">
                 <Container>
+                    <Navbar.Brand href="#home"><img src = {image} alt = "tim" style={{height:"30px"}}></img></Navbar.Brand>
                     <Navbar.Brand href="#home">Anshi's Todo List</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
